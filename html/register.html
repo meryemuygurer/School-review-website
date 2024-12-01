@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Üye kayıt Sayfası
+    </title>
+</head>
+
+<body>
+    <div class="register-container">
+        <h2 class="text-center">Kayıt Formu</h2>
+        <form method="POST" action="register.php">
+            <label for="name">Adınızı giriniz:</label>
+            <input type="text" name="name">
+            <label for="lastname">Soyadınızı giriniz:</label>
+            <input type="text" name="lastname">
+            <label for="username">Kullanıcı adınızı giriniz:</label>
+            <input type="text" name="username">
+            <label for="password">Şifrenizi giriniz:</label>
+            <input type="text" name="password">
+            <label for="password-agn">Şifrenizi tekrar giriniz:</label>
+            <input type="text" name="password-agn">
+            <label for="school">Okul Seçiniz:</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="graduated" value="mezun"> Mezun
+                </label>
+                <label>
+                    <input type="radio" name="graduated" value="mezun-degil"> Mezun değil
+                </label>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
