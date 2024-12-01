@@ -10,27 +10,38 @@
 </head>
 
 <body>
-    <div class="register-container">
+    <div class="container">
         <h2 class="text-center">Kayıt Formu</h2>
-        <form method="POST" action="register.php">
+        <form method="POST" action="../register.php">
             <label for="name">Adınızı giriniz:</label>
-            <input type="text" name="name">
+            <input type="text" name="name" id="name">
             <label for="lastname">Soyadınızı giriniz:</label>
-            <input type="text" name="lastname">
+            <input type="text" name="lastname" id="lastname">
             <label for="username">Kullanıcı adınızı giriniz:</label>
-            <input type="text" name="username">
+            <input type="text" name="username" id="username">
             <label for="password">Şifrenizi giriniz:</label>
-            <input type="text" name="password">
+            <input type="password" name="password" id="password">
             <label for="password-agn">Şifrenizi tekrar giriniz:</label>
-            <input type="text" name="password-agn">
-            <label for="school">Okul Seçiniz:</label>
-            <select name="cars" id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
+            <input type="password" name="password-agn" id="password-agn">
+
+            <label for="graduate-level">Üniversitede okudunuz mu ? / Okuyor musunuz ?</label>
+            <select name="graduate-level" id="graduate-level">
+                <option value="">Seçiniz</option>
+                <option value="yes" id="yes">Okudum / Okuyorum</option>
+                <option value="no" id="no">Okumadım / Okumuyorum</option>
             </select>
-            <div class="radio-group">
+
+            <div id="dynamic-fields" style="display: none; margin: 10px 0;">
+                <label for="school" style="margin-bottom: 5px;">Okul Seçiniz:</label>
+                <select name="universities" id="universities">
+                    <option value="marmara">Marmara Üniversitesi</option>
+                    <option value="medeniyet">Medeniyet Üniversitesi</option>
+                    <option value="yildiz">Yıldız Teknik Üniversitesi</option>
+                    <option value="bogazici">Boğaziçi Üniversitesi</option>
+                </select>
+            </div>
+            <div class="radio-group" id="radio-group" style="display: none;">
+                <label>Mezuniyet durumunuz:</label>
                 <label>
                     <input type="radio" name="graduated" value="mezun"> Mezun
                 </label>
@@ -38,8 +49,18 @@
                     <input type="radio" name="graduated" value="mezun-degil"> Mezun değil
                 </label>
             </div>
+            <div class="buttons">
+                <input type="submit">
+                <input type="reset">
+            </div>
         </form>
+        <div class="login-button" style="text-align: center; margin-top: 20px;">
+            <a href="login.html"
+                style="text-decoration: none; background-color:rgb(105, 11, 105); color: white; padding: 10px 20px; border-radius: 5px;">Üyeliğiniz
+                var mı ? Giriş Yapın</a>
+        </div>
     </div>
+    <script src="../script.js"></script>
 </body>
 
 </html>
