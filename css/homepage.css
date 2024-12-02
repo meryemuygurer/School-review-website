@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.topbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aqua;
+    padding: 15px 100px;
+    height: 20px;
+}
+
+header{
+    padding: 15px 100px;
+    height: 70px;
+    
+}
+
+.sc-row{
+    display: flex;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar-container{
+    background-color: antiquewhite;
+}
