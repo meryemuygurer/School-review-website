@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(247, 232, 247);
+}
+
 ul{
     list-style: none;
     display: flex;
@@ -17,7 +21,7 @@ ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(230, 215, 215);
     padding: 15px 100px;
     height: 20px;
 }
@@ -38,5 +42,12 @@ a{
 }
 
 .navbar-container{
-    background-color: antiquewhite;
+    background-color: gray;
+}
+
+.header-ul li a{
+    padding: 8px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
 }
