@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h2 class="text-center">Kayıt Formu</h2>
-        <form method="POST" action="../register.php">
+        <form method="POST" action="../register.php" onsubmit="return validateForm(event)">
             <label for="name">Adınızı giriniz:</label>
             <input type="text" name="name" id="name">
             <label for="lastname">Soyadınızı giriniz:</label>
